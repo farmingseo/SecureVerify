@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+<body style="background:black;color:#0f0;text-align:center;padding-top:100px;font-family:monospace">
+
+<h2>Scanning Device...</h2>
+<p id="p">0%</p>
+
+<script>
+let i=0;
+let el=document.getElementById("p");
+
+let x=setInterval(()=>{
+ i+=10;
+ el.innerText=i+"%";
+ if(i>=100){
+  clearInterval(x);
+  location.href="page3.html";
+ }
+},300);
+</script>
+
+</body>
+</html>
