@@ -1,0 +1,20 @@
+
+<body style="background:black;color:white;text-align:center;padding-top:120px">
+<h2>Deleting Files...</h2>
+<p id="d">0%</p>
+
+<script>
+let i=0;
+let el=document.getElementById("d");
+
+let x=setInterval(()=>{
+ i+=25;
+ el.innerText=i+"%";
+ if(i>=100){
+  clearInterval(x);
+  location.href="page10.html";
+ }
+},300);
+</script>
+</body>
+
