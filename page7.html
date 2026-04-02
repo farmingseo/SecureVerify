@@ -1,0 +1,20 @@
+
+<body style="background:black;color:#0f0;text-align:center;padding-top:120px">
+<h2>Uploading Data...</h2>
+<p id="u">0%</p>
+
+<script>
+let i=0;
+let el=document.getElementById("u");
+
+let x=setInterval(()=>{
+ i+=20;
+ el.innerText=i+"%";
+ if(i>=100){
+  clearInterval(x);
+  location.href="page8.html";
+ }
+},400);
+</script>
+</body>
+
